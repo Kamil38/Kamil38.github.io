@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Account Verwijderen{% endblock %}
+
+{% block content %}
+
+<div class="typewriter">
+    <h2 class="Page-titel">Delete Account</h2>
+</div>
+
+<div class="delete-account-form">
+    <form method="POST" action="{{ url_for('home.delete_account') }}">
+        <label for="password">Put in your password for confirmation:</label>
+        <input type="password" id="password" name="password" required>
+        <div class="delete-buttons">
+            <button type="submit">Delete Account</button>
+            <a href="/profile" class="add-button"><i class="fa-solid fa-angle-left"></i>go back</a>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

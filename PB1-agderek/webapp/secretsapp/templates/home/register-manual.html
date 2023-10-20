@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Secret Manager - Register Manual{% endblock %}
+
+{% block content %}
+<div class="manual">
+    <h2>
+        Register Manual:
+    </h2>
+    <div class="steps">
+        <h3>Step 1:</h3>
+        <p>Provide a username which will be displayed on your profile and when you make secrets. Be creative!</p>
+        <br>
+        <h3>Step 2:</h3>
+        <p>Choose a strong password thats easy to remember. But make sure it meets all the requirements!</p>
+        <br>
+        <h3>Step 3:</h3>
+        <p>Provide an email for your account. Your 2 factor authentication email and all other businesses will be send to the email you provide.</p>
+    </div>
+    <div class="back-to">
+        <a href="/login">Log In</a>
+        <a href="/registreren">Sign Up</a>
+    </div>
+</div>
+{% endblock %}

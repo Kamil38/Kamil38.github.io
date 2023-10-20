@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Secret Manager - Profile{% endblock %}
+
+{% block content %}
+
+<div class="typewriter">
+    <h2 class="Page-titel">Profile</h2>
+</div>
+
+<div class="user-info-background">
+    <div class="user-information">
+        {% if user %}
+        <p><b>Username</b>: {{ user[1] }}</p>
+        <p><b>Email</b>: {{ user[3] }}</p>
+        <p><b>Last logged in</b>: {{ last_login_prev }}</p>
+        <div class="profile-buttons">
+            <a href="/delete-account" class="btn btn-danger">Delete Account</a>
+            <a href="/change-password" class="btn btn-danger">change password</a>
+        </div>
+        {% else %}
+        <p>User information not found.</p>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

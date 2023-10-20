@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Secret Manager - Home{% endblock %}
+
+{% block content %}
+   
+    <div class="typewriter">
+        <h2 class="Page-titel">Secret Manager</h2>
+    </div>
+    <div class="index-body">
+        <div class="mysecret-info">
+            <div class="mysecret-info-explenation">
+                <h2 class="mysecret-info-titel">Welcome to Secret Manager</h2><br>
+                <p class="mysecret-info-block">
+                    <!-- <b>Secret Manager</b> is a super secure vault for important information to keep in secret. Take as example your passwords, certain information you want to keep for yourself, your bank details or other things you want no one to access. You can keep a record of all your secrets on the <a href="/my-secrets" class="redirect-my-secrets"><b>My Secrets</b></a> page. Using Secret Manager makes things safer, tidier, and easier to keep track of. -->
+                    <h3>Safeguarding Your Sensitive Information</h3><br>
+                    <div class="home-lists">
+                        <div class="list-1">
+                            <h4><b>Key features:</b></h4><br>
+                            <ul class="list-1-content">
+                                <li><b>Advanced Encryption</b>: Your data is protected with industry-standard encryption techniques, ensuring maximum security.</li>
+                                <li><b>Intuitive Interface</b>: Easily navigate and manage your confidential information with our user-friendly design.</li>
+                                <li><b>Efficient Organization</b>: Streamline your workflow with powerful search and categorization tools.</li>
+                                <li><b>Customizable Settings</b>: Tailor the application to fit your unique preferences and workflow.</li>
+                            </ul>
+                        </div>
+                        <div class="list-2">
+                            <h4><b>Benefits:</b></h4><br>
+                            <ul class="list-2-content">
+                                <li><b>Peace of Mind</b>: Rest easy knowing your sensitive information is kept safe and secure.</li>
+                                <li><b>Effortless Access</b>: Quickly retrieve your confidential data whenever you need it.</li>
+                                <li><b>Stay Organized</b>: Efficiently manage and organize your secrets for maximum productivity.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </p>
+            </div>
+            <div class="mysecret-info-image">
+                <img src="../../static/img/padlock.png" alt="padlock" class="padlock">
+            </div>
+        </div>
+        <div class="mysecret-info-2">
+            <div class="mysecret-info-explenation-2">
+                <div class="list-3">
+                    <h3><b>How it works:</b></h3><br>
+                    <ol class="list-3-content">
+                        <li><b>Create an Account</b>: Sign up for a free account and set up your personalized Secret Manager profile.</li>
+                        <li><b>Add Secrets</b>: Easily add and categorize your confidential information within the application.</li>
+                        <li><b>Access Anywhere</b>: Enjoy seamless access to your secrets from any device with internet connectivity.</li>
+                    </ol>
+                </div>
+                <div class="user-testimonials">
+                    <h3><b>User Testimonials:</b></h3><br>
+                    <p><i>"Secret Manager has been a game-changer for me. I no longer worry about the security of my sensitive information."</i> <br><br> - John Doe, satisfied user</p>
+                </div>
+                <div class="get-started">
+                    <h2><b>Get Started Today!</b></h2><br>
+                    <a href="/registreren" class="redirect-register"><b>Sign Up Now</b></a><br><br>
+                    <p>For any questions or support, <a href="/contact" class="redirect-contact"><b>contact us</b></a>.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
